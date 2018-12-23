@@ -1,9 +1,12 @@
 {
   "name": "extra-boolean",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Standard utility methods for Boolean.",
   "main": "index.js",
   "scripts": {
+    "prepublishOnly": "node ./prepublish",
+    "browserify": "browserify index.js -o index.web.js -s Boolean",
+    "uglifyjs": "uglifyjs -c -m -o index.min.js index.web.js",
     "test": "exit"
   },
   "keywords": [

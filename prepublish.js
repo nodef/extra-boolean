@@ -7,8 +7,8 @@ const os = require('os');
 
 
 // Global variables.
-const ORG = 'extra-array';
-const ORIGINAL = 'Original module: [extra-array].';
+const ORG = 'extra-boolean';
+const ORIGINAL = 'Original module: [extra-boolean].';
 const CDN = '> CDN: [unpkg], [jsDelivr].';
 const STDIO = [0, 1, 2];
 const EOL = os.EOL;
@@ -87,9 +87,9 @@ function pkgMinify(o) {
   var index = fs.readFileSync('index.min.js', 'utf8');
   readme = readme.replace(/(\.<br>)/, ', exported as `String`$1');
   readme = readme.replace(/(\.<br>)[\s\S]*?(\[!\[nodef\])/, `$1${EOL}${ORIGINAL}${EOL}${CDN}${EOL}<br>${EOL}${EOL}${EOL}$2`);
-  readme = readme.replace(/extra-array\.min/g, 'extra-array');
-  readme += `[unpkg]: https://unpkg.com/extra-array.min${EOL}`;
-  readme += `[jsDelivr]: https://cdn.jsdelivr.net/npm/extra-array.min${EOL}`;
+  readme = readme.replace(/extra-boolean\.min/g, 'extra-boolean');
+  readme += `[unpkg]: https://unpkg.com/extra-boolean.min${EOL}`;
+  readme += `[jsDelivr]: https://cdn.jsdelivr.net/npm/extra-boolean.min${EOL}`;
   pkg.name += '.min';
   pkg.description = pkg.description.replace('.$', ' (browserified, minifined).');
   pkg.scripts = {test: 'exit'};

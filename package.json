@@ -1,0 +1,23 @@
+{
+  "name": "extra-boolean",
+  "version": "0.0.1",
+  "description": "Standard utility methods for Boolean.",
+  "main": "index.js",
+  "scripts": {
+    "test": "exit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nodef/extra-boolean.git"
+  },
+  "keywords": [
+    "extra",
+    "boolean"
+  ],
+  "author": "wolfram77@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nodef/extra-boolean/issues"
+  },
+  "homepage": "https://github.com/nodef/extra-boolean#readme"
+}

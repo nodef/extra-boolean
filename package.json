@@ -1,6 +1,6 @@
 {
   "name": "extra-boolean",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "description": "Standard utility methods for Boolean.",
   "main": "index.js",
   "scripts": {

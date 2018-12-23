@@ -1,23 +1,36 @@
 {
   "name": "extra-boolean",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Standard utility methods for Boolean.",
   "main": "index.js",
   "scripts": {
     "test": "exit"
   },
+  "keywords": [
+    "extra",
+    "boolean",
+    "standard",
+    "utility",
+    "method",
+    "manipulation",
+    "function",
+    "merferry"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nodef/extra-boolean.git"
   },
-  "keywords": [
-    "extra",
-    "boolean"
-  ],
-  "author": "wolfram77@gmail.com",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/nodef/extra-boolean/issues"
   },
-  "homepage": "https://github.com/nodef/extra-boolean#readme"
+  "homepage": "https://github.com/nodef/extra-boolean#readme",
+  "author": "wolfram77@gmail.com",
+  "license": "MIT",
+  "devDependencies": {
+    "browserify": "^16.2.3",
+    "find-npm-prefix": "^1.0.2",
+    "recast": "^0.16.1",
+    "tempy": "^0.2.1",
+    "uglify-es": "^3.3.9"
+  }
 }

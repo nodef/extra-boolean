@@ -85,7 +85,7 @@ function pkgMinify(o) {
   var license = fs.readFileSync('LICENSE', 'utf8');
   var readme = fs.readFileSync('README.md', 'utf8');
   var index = fs.readFileSync('index.min.js', 'utf8');
-  readme = readme.replace(/(\.<br>)/, ', exported as `String`$1');
+  readme = readme.replace(/(\.<br>)/, ', exported as `Boolean`$1');
   readme = readme.replace(/(\.<br>)[\s\S]*?(\[!\[nodef\])/, `$1${EOL}${ORIGINAL}${EOL}${CDN}${EOL}<br>${EOL}${EOL}${EOL}$2`);
   readme = readme.replace(/extra-boolean\.min/g, 'extra-boolean');
   readme += `[unpkg]: https://unpkg.com/extra-boolean.min${EOL}`;

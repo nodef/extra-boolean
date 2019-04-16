@@ -1,4 +1,4 @@
-Parse boolean from string.
+Parse (complex) boolean from string.
 
 ```javascript
 const parse = require('boolean-parse');

@@ -23,15 +23,24 @@ boolean.eqv(false, false);
 // true
 ```
 
-Datatype methods:
-- [is](https://www.npmjs.com/package/@extra-boolean/is)
+### reference
 
-Generate methods:
-- [parse](https://www.npmjs.com/package/@extra-boolean/parse)
+| Name                | Action
+|---------------------|-------
+| [is]                | Checks if value is boolean.
+| [parse]             | Reads a text, and converts it to a boolean value.
+| [xor]               | Gets exclusive-or of 2 boolean values.
+| [imp]               | Checks if antecedent => consequent (x => y).
+| [eqv]               | Checks if antecedent <=> consequent (x <=> y).
+
+<br>
 <br>
 
+[![nodef](https://merferry.glitch.me/card/extra-boolean.svg)](https://nodef.github.io)
 
-[![nodef](https://i.imgur.com/nwyrmkW.jpg)](https://nodef.github.io)
-
+[is]: https://github.com/nodef/extra-boolean/wiki/is
+[parse]: https://github.com/nodef/extra-boolean/wiki/parse
+[xor]: https://github.com/nodef/extra-boolean/wiki/xor
+[imp]: https://github.com/nodef/extra-boolean/wiki/imp
+[eqv]: https://github.com/nodef/extra-boolean/wiki/eqv
 [Boolean]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean
-[extra-boolean.min]: https://www.npmjs.com/package/extra-boolean.min

@@ -1,14 +1,51 @@
-function is(a) {
-  return typeof a==='boolean';
+/**
+ * Checks if value is boolean.
+ * @param {*} x a value
+ * @returns {boolean} true if boolean
+ */
+function is(x) {
+  return typeof x==='boolean';
 }
-function parse(str) {
-  var fal = str.search(/(negati|never|refus|wrong|fal|off)|\b(f|n|0)\b/gi)<0? 0:1;
-  var not = (str.match(/\b(nay|nah|no|dis|un|in)/gi)||[]).length & 1;
+
+/**
+ * Reads a text, and converts it to a boolean value.
+ * @param {string} x string to read
+ * @returns {boolean} true if text => true
+ */
+function parse(x) {
+  var fal = x.search(/(negati|never|refus|wrong|fal|off)|\b(f|n|0)\b/gi)<0? 0:1;
+  var not = (x.match(/\b(nay|nah|no|dis|un|in)/gi)||[]).length & 1;
   return !(fal^not);
 }
-// Datatype methods:
-Boolean.is = is;
 
-// Generate methods:
-Boolean.parse = parse;
-module.exports = Boolean;
+/**
+ * Gets exclusive-or of 2 boolean values.
+ * @param {boolean} x first
+ * @param {boolean} y second
+ */
+function xor(x, y) {
+  return (x ^ y)!==0;
+}
+
+/**
+ * Checks if condition => conclusion (x => y).
+ * @param {boolean} x condition
+ * @param {boolean} y conclusion
+ */
+function imp(x, y) {
+  return !x || y;
+}
+
+/**
+ * Checks if condition <=> conclusion (x <=> y).
+ * @param {boolean} x condition
+ * @param {boolean} y conclusion
+ */
+function eqv(x, y) {
+  return (x && y) || (!x && !y);
+}
+exports.is = is;
+exports.parse = parse;
+exports.xor = xor;
+exports.imp = imp;
+exports.eqv = eqv;

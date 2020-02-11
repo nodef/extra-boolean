@@ -9,7 +9,7 @@ function is(x) {
 
 /**
  * Reads a text, and converts it to a boolean value.
- * @param {string} x string to read
+ * @param {string} x text to read
  * @returns {boolean} true if text => true
  */
 function parse(x) {
@@ -28,18 +28,18 @@ function xor(x, y) {
 }
 
 /**
- * Checks if condition => conclusion (x => y).
- * @param {boolean} x condition
- * @param {boolean} y conclusion
+ * Checks if antecedent => consequent (x => y).
+ * @param {boolean} x antecedent
+ * @param {boolean} y consequent
  */
 function imp(x, y) {
   return !x || y;
 }
 
 /**
- * Checks if condition <=> conclusion (x <=> y).
- * @param {boolean} x condition
- * @param {boolean} y conclusion
+ * Checks if antecedent <=> consequent (x <=> y).
+ * @param {boolean} x antecedent
+ * @param {boolean} y consequent
  */
 function eqv(x, y) {
   return (x && y) || (!x && !y);

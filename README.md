@@ -1,11 +1,26 @@
-Standard utility methods for [Boolean].<br>
-Browserified, minified module: [extra-boolean.min].
+[Boolean] data type has two possible truth values to represent logic.
+Common boolean algebra functions and a clever parser are included here.
 
 ```javascript
-const Boolean = require('extra-boolean');
-// Boolean.is(<value>)
-// Boolean.parse(<string>)
-// ...
+const boolean = require('extra-boolean');
+
+boolean.parse('inactive');
+// false
+
+boolean.parse('not off');
+// true
+
+boolean.parse('truthy');
+// true
+
+boolean.xor(true, true);
+// false
+
+boolean.imp(true, false);
+// false
+
+boolean.eqv(false, false);
+// true
 ```
 
 Datatype methods:

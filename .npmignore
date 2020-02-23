@@ -1,3 +1,7 @@
+# scripts
+scripts/
+
 # build
 build.js
+bundle.js
 .travis.yml

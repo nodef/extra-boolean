@@ -8,6 +8,7 @@ const os = require('os');
 const ORG = 'nodef';
 const PACKAGE = 'extra-boolean';
 const STANDALONE = 'boolean';
+const BIN = cp.execSync('npm prefix -g')+'/bin/';
 const STDIO = [0, 1, 2];
 const EOL = os.EOL;
 
@@ -49,11 +50,12 @@ function pkgUpdate(pkg, o) {
 
 // Scatter a file to package.
 function pkgScatter(pth, o) {
+  console.log('pkgScatter:', pth, o);
   var name = path.basename(pth);
   name = name.substring(0, name.length-path.extname(name).length);
   var pre = pth.substring(0, pth.length-path.extname(pth).length);
   var url = `https://raw.githubusercontent.com/wiki/${ORG}/${PACKAGE}/${pre}.md`;
-  cp.execSync(`download ${url}`, {stdio: STDIO});
+  cp.execSync(BIN+`download ${url}`, {stdio: STDIO});
   var license = fs.readFileSync('LICENSE', 'utf8');
   var readme = fs.readFileSync(pre+'.md', 'utf8');
   var index = fs.readFileSync(pth, 'utf8');
@@ -79,8 +81,9 @@ function pkgScatter(pth, o) {
 }
 
 function pkgMinify(o) {
-  cp.execSync('browserify index.js -s boolean -o index.web.js', {stdio: STDIO});
-  cp.execSync('uglifyjs -c -m -o index.min.js index.web.js', {stdio: STDIO});
+  console.log('pkgMinify:', o);
+  cp.execSync(BIN+'browserify index.js -s boolean -o index.web.js', {stdio: STDIO});
+  cp.execSync(BIN+'uglifyjs -c -m -o index.min.js index.web.js', {stdio: STDIO});
   var pkg = JSON.parse(fs.readFileSync('package.json', 'utf8'));
   var license = fs.readFileSync('LICENSE', 'utf8');
   var readme = fs.readFileSync('README.md', 'utf8');
@@ -110,6 +113,8 @@ function pkgMinify(o) {
 
 // Run on shell.
 async function main(a) {
+  console.log('main:', a);
+  console.log({BIN, ORG, PACKAGE});
   var o = {org: PACKAGE};
   for(var f of fs.readdirSync('scripts')) {
     if(path.extname(f)!=='.js') continue;

@@ -94,7 +94,7 @@ function pkgMinify(o) {
   var index = fs.readFileSync('index.min.js', 'utf8');
   readme = readme.replace(/```/,
     `> This is browserified, minified version of [${PACKAGE}].<br>`+EOL+
-    `> It is exported as global variable **${STANDALONE}**.<br>`+
+    `> It is exported as global variable **${STANDALONE}**.<br>`+EOL+
     `> CDN: [unpkg], [jsDelivr].`+EOL+EOL+
     `[${PACKAGE}]: https://www.npmjs.com/package/${PACKAGE}`+EOL+
     `[unpkg]: https://unpkg.com/${PACKAGE}.min`+EOL+

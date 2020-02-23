@@ -1,6 +1,6 @@
 {
   "name": "extra-boolean",
-  "version": "1.2.8",
+  "version": "1.2.9",
   "description": "Boolean data type has two possible truth values to represent logic.",
   "main": "index.js",
   "scripts": {
@@ -29,6 +29,7 @@
   "license": "MIT",
   "devDependencies": {
     "find-npm-prefix": "^1.0.2",
-    "recast": "^0.18.7"
+    "recast": "^0.18.7",
+    "tempy": "^0.4.0"
   }
 }

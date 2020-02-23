@@ -8,7 +8,7 @@ const os = require('os');
 const ORG = 'nodef';
 const PACKAGE = 'extra-boolean';
 const STANDALONE = 'boolean';
-const BIN = cp.execSync('npm prefix -g').replace('\n', '')+'/bin/';
+const BIN = (cp.execSync('npm prefix -g')+'/bin/').replace('\n', '');
 const STDIO = [0, 1, 2];
 const EOL = os.EOL;
 
@@ -54,11 +54,15 @@ function pkgScatter(pth, o) {
   var name = path.basename(pth);
   name = name.substring(0, name.length-path.extname(name).length);
   var pre = pth.substring(0, pth.length-path.extname(pth).length);
-  var url = `https://raw.githubusercontent.com/wiki/${ORG}/${PACKAGE}/${pre}.md`;
-  cp.execSync(BIN+`download ${url}`, {stdio: STDIO});
+  var url = `https://raw.githubusercontent.com/wiki/${ORG}/${PACKAGE}/${name}.md`;
+  cp.execSync(BIN+`download ${url} > ${pre}.md`, {stdio: STDIO});
   var license = fs.readFileSync('LICENSE', 'utf8');
   var readme = fs.readFileSync(pre+'.md', 'utf8');
   var index = fs.readFileSync(pth, 'utf8');
+  readme = readme.replace(/```/,
+    `> This is part of package [${PACKAGE}].`+EOL+EOL+
+    `[${PACKAGE}]: https://www.npmjs.com/package/${PACKAGE}`+EOL+EOL+
+    '```');
   index = index.replace(new RegExp(`less (.*?)${name}.md`, 'g'), `less $1README.md`);
   var main = 'index'+path.extname(pth);
   var requires = pkgRequires(pth);
@@ -90,7 +94,7 @@ function pkgMinify(o) {
   var index = fs.readFileSync('index.min.js', 'utf8');
   readme = readme.replace(/```/,
     `> This is browserified, minified version of [${PACKAGE}].<br>`+EOL+
-    `> It is exported as global variable \`${STANDALONE}\`.<br>`
+    `> It is exported as global variable **${STANDALONE}**.<br>`
     `> CDN: [unpkg], [jsDelivr].`+EOL+EOL+
     `[${PACKAGE}]: https://www.npmjs.com/package/${PACKAGE}`+EOL+
     `[unpkg]: https://unpkg.com/${PACKAGE}.min`+EOL+

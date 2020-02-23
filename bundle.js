@@ -53,7 +53,7 @@ function pkgScatter(pth, o) {
   name = name.substring(0, name.length-path.extname(name).length);
   var pre = pth.substring(0, pth.length-path.extname(pth).length);
   var url = `https://raw.githubusercontent.com/wiki/${ORG}/${PACKAGE}/${pre}.md`;
-  cp.execSync(`wget ${url}`, {stdio: STDIO});
+  cp.execSync(`download ${url}`, {stdio: STDIO});
   var license = fs.readFileSync('LICENSE', 'utf8');
   var readme = fs.readFileSync(pre+'.md', 'utf8');
   var index = fs.readFileSync(pth, 'utf8');

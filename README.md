@@ -38,9 +38,12 @@ boolean.eqv(false, false);
 
 [![nodef](https://merferry.glitch.me/card/extra-boolean.svg)](https://nodef.github.io)
 
+> Browserified, minified version of this package is [extra-boolean.min].
+
 [is]: https://github.com/nodef/extra-boolean/wiki/is
 [parse]: https://github.com/nodef/extra-boolean/wiki/parse
 [xor]: https://github.com/nodef/extra-boolean/wiki/xor
 [imp]: https://github.com/nodef/extra-boolean/wiki/imp
 [eqv]: https://github.com/nodef/extra-boolean/wiki/eqv
+[extra-boolean.min]: https://www.npmjs.com/package/extra-boolean.min
 [Boolean]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean

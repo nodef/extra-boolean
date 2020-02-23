@@ -8,7 +8,7 @@ const os = require('os');
 const ORG = 'nodef';
 const PACKAGE = 'extra-boolean';
 const STANDALONE = 'boolean';
-const BIN = cp.execSync('npm prefix -g')+'/bin/';
+const BIN = cp.execSync('npm prefix -g').replace('\n', '')+'/bin/';
 const STDIO = [0, 1, 2];
 const EOL = os.EOL;
 

@@ -1,6 +1,6 @@
 {
   "name": "extra-boolean",
-  "version": "1.2.6",
+  "version": "1.2.7",
   "description": "Boolean data type has two possible truth values to represent logic.",
   "main": "index.js",
   "scripts": {
@@ -26,5 +26,9 @@
   },
   "homepage": "https://github.com/nodef/extra-boolean#readme",
   "author": "wolfram77@gmail.com",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "find-npm-prefix": "^1.0.2",
+    "recast": "^0.18.7"
+  }
 }

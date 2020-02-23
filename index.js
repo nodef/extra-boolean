@@ -6,7 +6,6 @@
 function is(x) {
   return typeof x==='boolean';
 }
-
 /**
  * Reads a text, and converts it to a boolean value.
  * @param {string} x text to read
@@ -17,7 +16,6 @@ function parse(x) {
   var not = (x.match(/\b(nay|nah|no|dis|un|in)/gi)||[]).length & 1;
   return !(fal^not);
 }
-
 /**
  * Gets exclusive-or of 2 boolean values.
  * @param {boolean} x first
@@ -26,7 +24,6 @@ function parse(x) {
 function xor(x, y) {
   return (x ^ y)!==0;
 }
-
 /**
  * Checks if antecedent => consequent (x => y).
  * @param {boolean} x antecedent
@@ -35,7 +32,6 @@ function xor(x, y) {
 function imp(x, y) {
   return !x || y;
 }
-
 /**
  * Checks if antecedent <=> consequent (x <=> y).
  * @param {boolean} x antecedent

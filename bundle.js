@@ -100,7 +100,7 @@ function pkgMinify(o) {
     `[unpkg]: https://unpkg.com/${PACKAGE}.min`+EOL+
     `[jsDelivr]: https://cdn.jsdelivr.net/npm/${PACKAGE}.min`+EOL+EOL+
     '```');
-  readme = readme.replace(/^> .*?minified.*$/, '');
+  readme = readme.replace(/^> .*?minified.*$/m, '');
   pkg.name += '.min';
   pkg.description = pkg.description.replace('.$', ' (browserified, minifined).');
   pkg.scripts = {test: 'exit'};

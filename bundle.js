@@ -92,6 +92,7 @@ function pkgMinify(o) {
   var license = fs.readFileSync('LICENSE', 'utf8');
   var readme = fs.readFileSync('README.md', 'utf8');
   var index = fs.readFileSync('index.min.js', 'utf8');
+  readme = readme.replace(/^> .*?minified.*$/m, '');
   readme = readme.replace(/```/,
     `> This is browserified, minified version of [${PACKAGE}].<br>`+EOL+
     `> It is exported as global variable **${STANDALONE}**.<br>`+EOL+
@@ -100,7 +101,6 @@ function pkgMinify(o) {
     `[unpkg]: https://unpkg.com/${PACKAGE}.min`+EOL+
     `[jsDelivr]: https://cdn.jsdelivr.net/npm/${PACKAGE}.min`+EOL+EOL+
     '```');
-  readme = readme.replace(/^> .*?minified.*$/m, '');
   pkg.name += '.min';
   pkg.description = pkg.description.replace('.$', ' (browserified, minifined).');
   pkg.scripts = {test: 'exit'};

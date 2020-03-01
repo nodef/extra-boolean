@@ -3,6 +3,7 @@ Common boolean algebra functions and a clever parser are included here.
 
 ```javascript
 const boolean = require('extra-boolean');
+// import * as boolean from 'extra-boolean' (TypeScript)
 
 boolean.parse('inactive');
 // false

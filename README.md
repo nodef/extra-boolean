@@ -8,7 +8,8 @@ Methods as separate packages:
 
 ```javascript
 const boolean = require('extra-boolean');
-// import * as boolean from 'extra-boolean' (TypeScript)
+// import * as boolean from 'extra-boolean';
+// import * as boolean from 'https://unpkg.com/extra-boolean@1.3.20/index.mjs'; (deno)
 
 boolean.parse('inactive');
 // false
@@ -40,16 +41,12 @@ boolean.eqv(false, false);
 | [eqv]               | Checks if antecedent <=> consequent (x <=> y).
 
 <br>
-<br>
 
 [![nodef](https://merferry.glitch.me/card/extra-boolean.svg)](https://nodef.github.io)
 
-> Browserified, minified version of this package is [extra-boolean.min].
-
+[Boolean]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean
 [is]: https://github.com/nodef/extra-boolean/wiki/is
 [parse]: https://github.com/nodef/extra-boolean/wiki/parse
 [xor]: https://github.com/nodef/extra-boolean/wiki/xor
 [imp]: https://github.com/nodef/extra-boolean/wiki/imp
 [eqv]: https://github.com/nodef/extra-boolean/wiki/eqv
-[extra-boolean.min]: https://www.npmjs.com/package/extra-boolean.min
-[Boolean]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean

@@ -1,4 +1,4 @@
-[Boolean] data type has two possible truth values to represent logic.
+[Boolean] data type has two possible truth values to represent logic. [:running:] [:vhs:] [:package:] [:moon:] [:ledger:]
 
 Methods as separate packages:
 - `@extra-boolean/parse`: use [rollup] to bundle this es module.
@@ -45,8 +45,16 @@ boolean.eqv(false, false);
 [![nodef](https://merferry.glitch.me/card/extra-boolean.svg)](https://nodef.github.io)
 
 [Boolean]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean
+[browserify]: https://www.npmjs.com/package/browserify
+[rollup]: https://www.npmjs.com/package/rollup
+[uglify-js]: https://www.npmjs.com/package/uglify-js
 [is]: https://github.com/nodef/extra-boolean/wiki/is
 [parse]: https://github.com/nodef/extra-boolean/wiki/parse
 [xor]: https://github.com/nodef/extra-boolean/wiki/xor
 [imp]: https://github.com/nodef/extra-boolean/wiki/imp
 [eqv]: https://github.com/nodef/extra-boolean/wiki/eqv
+[:running:]: https://npm.runkit.com/extra-boolean
+[:vhs:]: https://asciinema.org/a/337221
+[:package:]: https://www.npmjs.com/package/extra-boolean
+[:moon:]: https://www.npmjs.com/package/extra-boolean.min
+[:ledger:]: https://unpkg.com/extra-boolean/

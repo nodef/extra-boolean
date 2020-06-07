@@ -4,7 +4,7 @@ Methods as separate packages:
 - `@extra-boolean/parse`: use [rollup] to bundle this es module.
 - `@extra-boolean/parse.min`: use in browser ([browserify], [uglify-js]).
 
-Common boolean algebra functions and a clever parser are included here.
+> Stability: Experimental.
 
 ```javascript
 const boolean = require('extra-boolean');

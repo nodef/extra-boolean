@@ -1,7 +1,16 @@
-# scripts
-scripts/
+# Parts
+src/
+wiki/
+.gitmodules
 
-# build
+# Build
+build/
 build.js
-bundle.js
 .travis.yml
+tsconfig.json
+rollup.config.js
+
+# Others
+unused/
+unused.*
+TODO

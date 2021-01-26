@@ -1,10 +1,23 @@
+const RFALSE = /(negati|never|refus|wrong|fal|off)|\b(f|n|0)\b/gi;
+const RNEGATE = /\b(nay|nah|no|dis|un|in)/gi;
+
 /**
- * Converts string to boolean.
+ * Convert string to boolean.
+ * [📘](https://github.com/elmw/extra-boolean/wiki/parse)
  * @param s a string
+ * @example
+ * ```javascript
+ * parse("1")        === true
+ * parse("truthy")   === true
+ * parse("not off")  === true
+ * parse("not true") === false
+ * parse("inactive") === false
+ * parse("disabled") === false
+ * ```
  */
 function parse(s: string): boolean {
-  var fal = s.search(/(negati|never|refus|wrong|fal|off)|\b(f|n|0)\b/gi)<0? 0:1;
-  var not = (s.match(/\b(nay|nah|no|dis|un|in)/gi)||[]).length & 1;
-  return !(fal^not);
+  var f = s.search(RFALSE) >= 0;
+  var n = (s.match(RNEGATE)||[]).length % 2 === 1;
+  return f === n;
 }
 export default parse;

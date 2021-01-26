@@ -1,9 +1,20 @@
+import imply from "./imply";
+
+
 /**
- * Checks if antecedent => consequent (x => y).
- * @param x antecedent
- * @param y consequent
+ * Check if antecedent ⇒ consequent (a ⇒ b).
+ * [📘](https://github.com/elmw/extra-boolean/wiki/imp)
+ * @param a antecedent
+ * @param b consequent
+ * @example
+ * ```javascript
+ * imp(true, true)   === true
+ * imp(false, true)  === true
+ * imp(false, false) === true
+ * imp(true, false)  === false
+ * ```
  */
-function imp(x: boolean, y: boolean): boolean {
-  return !x || y;
+function imp(a: boolean, b: boolean): boolean {
+  return imply(a, b);
 }
 export default imp;

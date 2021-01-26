@@ -1,9 +1,20 @@
+import eq from "./eq";
+
+
 /**
- * Checks if antecedent <=> consequent (x <=> y).
- * @param x antecedent
- * @param y consequent
+ * Check if antecedent ⇔ consequent (a ⇔ b).
+ * [📘](https://github.com/elmw/extra-boolean/wiki/eqv)
+ * @param a antecedent
+ * @param b consequent
+ * @example
+ * ```javascript
+ * eqv(true, true)   === true
+ * eqv(false, false) === true
+ * eqv(true, false)  === false
+ * eqv(false, true)  === false
+ * ```
  */
-function eqv(x: boolean, y: boolean): boolean {
-  return (x && y) || (!x && !y);
+function eqv(a: boolean, b: boolean): boolean {
+  return eq(a, b);
 }
 export default eqv;

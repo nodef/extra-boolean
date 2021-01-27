@@ -3,7 +3,7 @@ import xor from "./xor";
 
 /**
  * Check if even no. of values are true.
- * [📘](https://github.com/elmw/extra-boolean/wiki/xnor)
+ * [📘](https://github.com/nodef/extra-boolean/wiki/xnor)
  * @param a 1st boolean
  * @param b 2nd boolean
  * @param c 3rd boolean

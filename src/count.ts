@@ -1,6 +1,6 @@
 /**
  * Count no. of true values.
- * [📘](https://github.com/elmw/extra-boolean/wiki/count)
+ * [📘](https://github.com/nodef/extra-boolean/wiki/count)
  * @param a 1st boolean
  * @param b 2nd boolean
  * @param c 3rd boolean

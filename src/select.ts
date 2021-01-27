@@ -1,6 +1,6 @@
 /**
  * Check if ith value is true.
- * [📘](https://github.com/elmw/extra-boolean/wiki/select)
+ * [📘](https://github.com/nodef/extra-boolean/wiki/select)
  * @param i index
  * @param a 1st boolean
  * @param b 2nd boolean

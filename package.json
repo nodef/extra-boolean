@@ -1,6 +1,6 @@
 {
   "name": "extra-boolean",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "Boolean data type has two possible truth values to represent logic.",
   "main": "index.js",
   "module": "index.mjs",
@@ -21,10 +21,21 @@
     "boolean",
     "algebra",
     "logic",
+    "and",
+    "count",
+    "eq",
     "eqv",
     "imp",
+    "imply",
     "is",
+    "nand",
+    "nimply",
+    "nor",
+    "not",
+    "or",
     "parse",
+    "select",
+    "xnor",
     "xor"
   ],
   "repository": {
@@ -38,6 +49,7 @@
   "author": "wolfram77@gmail.com",
   "license": "MIT",
   "devDependencies": {
-    "extra-build": "^1.1.28"
+    "extra-build": "^1.1.28",
+    "typedoc": "^0.20.19"
   }
 }

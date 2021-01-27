@@ -3,7 +3,7 @@ const RNEGATE = /\b(nay|nah|no|dis|un|in)/gi;
 
 /**
  * Convert string to boolean.
- * [📘](https://github.com/elmw/extra-boolean/wiki/parse)
+ * [📘](https://github.com/nodef/extra-boolean/wiki/parse)
  * @param s a string
  * @example
  * ```javascript

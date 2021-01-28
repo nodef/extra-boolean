@@ -4,8 +4,7 @@ wiki/
 .gitmodules
 
 # Build
-build/
-build.js
+.build/
 .travis.yml
 tsconfig.json
 rollup.config.js

@@ -1,6 +1,6 @@
 {
   "name": "extra-boolean",
-  "version": "1.4.23",
+  "version": "1.4.24",
   "description": "Boolean data type has two possible truth values to represent logic.",
   "main": "index.js",
   "module": "index.mjs",
@@ -45,7 +45,7 @@
   "author": "wolfram77@gmail.com",
   "license": "MIT",
   "devDependencies": {
-    "extra-build": "^1.2.51",
+    "extra-build": "^1.2.52",
     "typedoc": "^0.20.19"
   }
 }

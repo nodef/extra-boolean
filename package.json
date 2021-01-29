@@ -1,6 +1,6 @@
 {
   "name": "extra-boolean",
-  "version": "1.4.25",
+  "version": "1.4.26",
   "description": "Boolean data type has two possible truth values to represent logic.",
   "main": "index.js",
   "module": "index.mjs",

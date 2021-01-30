@@ -10,6 +10,8 @@
 
 > Stability: Experimental.
 
+<br>
+
 ```javascript
 const boolean = require('extra-boolean');
 // import * as boolean from 'extra-boolean';
@@ -41,28 +43,33 @@ boolean.count(true, false, true);
 // 2           ^            ^
 ```
 
-### reference
-
-| Name     | Action                                |
-| -------- | ------------------------------------- |
-| [is]     | Checks if value is boolean.
-| [parse]  | Convert string to boolean.
-| [not]    | Check if value is false.
-| [and]    | Check if all values are true.
-| [or]     | Check if any value is true.
-| [xor]    | Check if odd no. of values are true.
-| [nand]   | Check if any value is false.
-| [nor]    | Check if all values are false.
-| [xnor]   | Check if even no. of values are true.
-| [eq]     | Check if antecedent ⇔ consequent (a ⇔ b).
-| [imply]  | Check if antecedent ⇒ consequent (a ⇒ b).
-| [nimply] | Check if antecedent ⇏ consequent (a ⇏ b).
-| [select] | Check if ith value is true.
-| [count]  | Count no. of true values.
-
+<br>
 <br>
 
-[![nodef](https://merferry.glitch.me/card/extra-boolean.svg)](https://nodef.github.io)
+
+## Index
+
+| Name     | Action                                    |
+| -------- | ----------------------------------------- |
+| [is]     | Checks if value is boolean.               |
+| [parse]  | Convert string to boolean.                |
+| [not]    | Check if value is false.                  |
+| [and]    | Check if all values are true.             |
+| [or]     | Check if any value is true.               |
+| [xor]    | Check if odd no. of values are true.      |
+| [nand]   | Check if any value is false.              |
+| [nor]    | Check if all values are false.            |
+| [xnor]   | Check if even no. of values are true.     |
+| [eq]     | Check if antecedent ⇔ consequent (a ⇔ b). |
+| [imply]  | Check if antecedent ⇒ consequent (a ⇒ b). |
+| [nimply] | Check if antecedent ⇏ consequent (a ⇏ b). |
+| [select] | Check if ith value is true.               |
+| [count]  | Count no. of true values.                 |
+
+<br>
+<br>
+
+[![](https://img.youtube.com/vi/6mMK6iSZsAs/maxresdefault.jpg)](https://www.youtube.com/watch?v=6mMK6iSZsAs)
 
 [Boolean]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean
 [browserify]: https://www.npmjs.com/package/browserify

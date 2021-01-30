@@ -1,6 +1,7 @@
 # Parts
 src/
 wiki/
+tests/
 .gitmodules
 
 # Build
@@ -8,6 +9,7 @@ wiki/
 .travis.yml
 tsconfig.json
 rollup.config.js
+jestconfig.json
 
 # Others
 unused/

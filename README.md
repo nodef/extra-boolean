@@ -15,7 +15,7 @@
 ```javascript
 const boolean = require('extra-boolean');
 // import * as boolean from 'extra-boolean';
-// import * as boolean from 'https://unpkg.com/extra-boolean@1.5.0/index.mjs'; (deno)
+// import * as boolean from 'https://unpkg.com/extra-boolean@1.6.0/index.mjs'; (deno)
 
 boolean.parse("1");
 boolean.parse("not off");

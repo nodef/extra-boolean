@@ -45,7 +45,7 @@
   "author": "wolfram77@gmail.com",
   "license": "MIT",
   "devDependencies": {
-    "extra-build": "^1.2.80",
+    "extra-build": "^1.2.81",
     "typedoc": "^0.20.19"
   }
 }

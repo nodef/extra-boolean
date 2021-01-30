@@ -1,6 +1,6 @@
 {
   "name": "extra-boolean",
-  "version": "1.5.4",
+  "version": "1.6.0",
   "description": "Boolean data type has two possible truth values to represent logic.<br>",
   "main": "index.js",
   "module": "index.mjs",
@@ -9,7 +9,7 @@
     "import": "./index.mjs"
   },
   "scripts": {
-    "test": "exit"
+    "test": "jest --config jestconfig.json"
   },
   "runkitExampleFilename": "example.js",
   "keywords": [
@@ -29,7 +29,10 @@
   "author": "wolfram77@gmail.com",
   "license": "MIT",
   "devDependencies": {
+    "@types/jest": "^26.0.20",
     "extra-build": "^1.2.85",
+    "jest": "^26.6.3",
+    "ts-jest": "^26.5.0",
     "typedoc": "^0.20.19"
   }
 }

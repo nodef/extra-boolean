@@ -4,7 +4,7 @@
 :running: [RunKit](https://npm.runkit.com/extra-boolean),
 :vhs: [Asciinema](https://asciinema.org/a/337221),
 :moon: [Minified](https://www.npmjs.com/package/extra-boolean.min),
-:ledger: [Files](https://unpkg.com/extra-boolean/),
+:scroll: [Files](https://unpkg.com/extra-boolean/),
 :newspaper: [JSDoc](https://nodef.github.io/extra-boolean/),
 :blue_book: [Wiki](https://github.com/nodef/extra-boolean/wiki/).
 
@@ -38,11 +38,11 @@ boolean.eqv(false, false);
 
 | Name    | Action                                    |
 | ------- | ----------------------------------------- |
-| [is]    | Checks if value is boolean.               |
-| [parse] | Convert string to boolean.                |
-| [xor]   | Check if odd no. of values are true.      |
-| [imp]   | Check if antecedent ⇒ consequent (a ⇒ b). |
-| [eqv]   | Check if antecedent ⇔ consequent (a ⇔ b). |
+| [is]    | Checks if value is boolean.
+| [parse] | Convert string to boolean.
+| [xor]   | Check if odd no. of values are true.
+| [imp]   | Check if antecedent ⇒ consequent (a ⇒ b).
+| [eqv]   | Check if antecedent ⇔ consequent (a ⇔ b).
 
 <br>
 

@@ -1,6 +1,5 @@
 /**
  * Check if any value is true.
- * [📘](https://github.com/nodef/extra-boolean/wiki/or)
  * @param a 1st boolean
  * @param b 2nd boolean
  * @param c 3rd boolean

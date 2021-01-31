@@ -3,7 +3,6 @@ import and from "./and";
 
 /**
  * Check if any value is false.
- * [📘](https://github.com/nodef/extra-boolean/wiki/nand)
  * @param a 1st boolean
  * @param b 2nd boolean
  * @param c 3rd boolean

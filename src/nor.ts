@@ -3,7 +3,6 @@ import or from "./or";
 
 /**
  * Check if all values are false.
- * [📘](https://github.com/nodef/extra-boolean/wiki/nor)
  * @param a 1st boolean
  * @param b 2nd boolean
  * @param c 3rd boolean

@@ -3,7 +3,6 @@ import eq from "./eq";
 
 /**
  * Check if antecedent ⇔ consequent (a ⇔ b).
- * [📘](https://github.com/nodef/extra-boolean/wiki/eqv)
  * @param a antecedent
  * @param b consequent
  * @example

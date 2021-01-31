@@ -1,6 +1,5 @@
 /**
  * Check if antecedent ⇔ consequent (a ⇔ b).
- * [📘](https://github.com/nodef/extra-boolean/wiki/eq)
  * @param a antecedent
  * @param b consequent
  * @example

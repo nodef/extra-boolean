@@ -1,6 +1,5 @@
 /**
  * Check if value is false.
- * [📘](https://github.com/nodef/extra-boolean/wiki/not)
  * @param a a boolean
  * @example
  * ```javascript

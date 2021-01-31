@@ -1,7 +1,5 @@
 # Generated files
 .build/
-.example/
-.jsdoc/
 *.d.ts
 *.map
 example.js

@@ -1,6 +1,6 @@
 [Boolean] data type has two possible truth values to represent logic.<br>
 :package: [NPM](https://www.npmjs.com/package/extra-boolean),
-:smiley_cat: [GitHub](https://www.npmjs.com/package/extra-boolean),
+:smiley_cat: [GitHub](https://github.com/orgs/nodef/packages?repo_name=extra-boolean),
 :running: [RunKit](https://npm.runkit.com/extra-boolean),
 :vhs: [Asciinema](https://asciinema.org/a/337221),
 :moon: [Minified](https://www.npmjs.com/package/extra-boolean.min),
@@ -51,7 +51,7 @@ boolean.count(true, false, true);
 
 | Name     | Action                                    |
 | -------- | ----------------------------------------- |
-| [is]     | Checks if value is boolean.               |
+| [is]     | Check if value is boolean.                |
 | [parse]  | Convert string to boolean.                |
 | [not]    | Check if value is false.                  |
 | [and]    | Check if all values are true.             |
@@ -72,14 +72,9 @@ boolean.count(true, false, true);
 [![](https://img.youtube.com/vi/6mMK6iSZsAs/maxresdefault.jpg)](https://www.youtube.com/watch?v=6mMK6iSZsAs)
 
 [Boolean]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean
-[browserify]: https://www.npmjs.com/package/browserify
-[rollup]: https://www.npmjs.com/package/rollup
-[uglify-js]: https://www.npmjs.com/package/uglify-js
 [is]: https://github.com/nodef/extra-boolean/wiki/is
 [parse]: https://github.com/nodef/extra-boolean/wiki/parse
 [xor]: https://github.com/nodef/extra-boolean/wiki/xor
-[imp]: https://github.com/nodef/extra-boolean/wiki/imp
-[eqv]: https://github.com/nodef/extra-boolean/wiki/eqv
 [not]: https://github.com/nodef/extra-boolean/wiki/not
 [and]: https://github.com/nodef/extra-boolean/wiki/and
 [or]: https://github.com/nodef/extra-boolean/wiki/or

@@ -1,5 +1,5 @@
 /**
- * Check if any value is true.
+ * Checks if any value is true.
  * @param a 1st boolean
  * @param b 2nd boolean
  * @param c 3rd boolean

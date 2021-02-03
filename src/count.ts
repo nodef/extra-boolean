@@ -1,5 +1,5 @@
 /**
- * Count no. of true values.
+ * Counts no. of true values.
  * @param a 1st boolean
  * @param b 2nd boolean
  * @param c 3rd boolean

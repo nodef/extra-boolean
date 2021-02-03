@@ -1,5 +1,5 @@
 /**
- * Check if value is boolean.
+ * Checks if value is boolean.
  * @param v a value
  * ```javascript
  * is(true)  === true

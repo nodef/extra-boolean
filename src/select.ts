@@ -1,5 +1,5 @@
 /**
- * Check if ith value is true.
+ * Checks if ith value is true.
  * @param i index
  * @param a 1st boolean
  * @param b 2nd boolean

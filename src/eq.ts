@@ -1,5 +1,5 @@
 /**
- * Check if antecedent ⇔ consequent (a ⇔ b).
+ * Checks if antecedent ⇔ consequent (a ⇔ b).
  * @param a antecedent
  * @param b consequent
  * @example

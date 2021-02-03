@@ -2,7 +2,7 @@ const RFALSE = /(negati|never|refus|wrong|fal|off)|\b(f|n|0)\b/gi;
 const RNEGATE = /\b(nay|nah|no|dis|un|in)/gi;
 
 /**
- * Convert string to boolean.
+ * Converts string to boolean.
  * @param s a string
  * @example
  * ```javascript

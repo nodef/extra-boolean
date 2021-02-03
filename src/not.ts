@@ -1,5 +1,5 @@
 /**
- * Check if value is false.
+ * Checks if value is false.
  * @param a a boolean
  * @example
  * ```javascript

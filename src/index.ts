@@ -14,3 +14,4 @@ export {default as not} from "./not";
 export {default as or} from "./or";
 export {default as select} from "./select";
 export {default as xnor} from "./xnor";
+export {default as neq} from "./neq";

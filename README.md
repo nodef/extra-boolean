@@ -1,12 +1,12 @@
 [Boolean] data type has two possible truth values to represent logic.<br>
-:package: [NPM](https://www.npmjs.com/package/extra-boolean),
-:smiley_cat: [GitHub](https://github.com/orgs/nodef/packages?repo_name=extra-boolean),
-:running: [RunKit](https://npm.runkit.com/extra-boolean),
-:vhs: [Asciinema](https://asciinema.org/a/337221),
-:moon: [Minified](https://www.npmjs.com/package/extra-boolean.min),
-:scroll: [Files](https://unpkg.com/extra-boolean/),
-:newspaper: [JSDoc](https://nodef.github.io/extra-boolean/),
-:blue_book: [Wiki](https://github.com/nodef/extra-boolean/wiki/).
+📦 [NPM](https://www.npmjs.com/package/extra-boolean),
+😺 [GitHub](https://github.com/orgs/nodef/packages?repo_name=extra-boolean),
+🏃 [RunKit](https://npm.runkit.com/extra-boolean),
+📼 [Asciinema](https://asciinema.org/a/337221),
+🌔 [Minified](https://www.npmjs.com/package/extra-boolean.min),
+📜 [Files](https://unpkg.com/extra-boolean/),
+📰 [JSDoc](https://nodef.github.io/extra-boolean/),
+📘 [Wiki](https://github.com/nodef/extra-boolean/wiki/).
 
 Here is my implementation of digital logic gates in software. That includes
 the basic gates [not], [and], [or], [xor]; their complements [nand], [nor],
@@ -29,7 +29,7 @@ the other gates? I answer them here.
 ```javascript
 const boolean = require("extra-boolean");
 // import * as boolean from "extra-boolean";
-// import * as boolean from "https://unpkg.com/extra-boolean@1.6.0/index.mjs"; (deno)
+// import * as boolean from "https://unpkg.com/extra-boolean@1.7.0/index.mjs"; (deno)
 
 boolean.parse("1");
 boolean.parse("not off");
@@ -85,6 +85,9 @@ boolean.count(true, false, true);
 <br>
 
 [![](https://img.youtube.com/vi/6mMK6iSZsAs/maxresdefault.jpg)](https://www.youtube.com/watch?v=6mMK6iSZsAs)
+
+[![](https://api.travis-ci.com/nodef/extra-boolean.svg)](https://travis-ci.com/github/nodef/extra-boolean)
+[![](https://coveralls.io/repos/github/nodef/extra-boolean/badge.svg?branch=master)](https://coveralls.io/github/nodef/extra-boolean?branch=master)
 
 [Boolean]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean
 ["boolean"]: https://www.npmjs.com/package/boolean

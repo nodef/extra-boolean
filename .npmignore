@@ -5,7 +5,7 @@ tests/
 .gitmodules
 
 # Build
-.build/
+build/
 coverage/
 .travis.yml
 .coveralls.yml

@@ -2,7 +2,6 @@
 📦 [NPM](https://www.npmjs.com/package/extra-boolean),
 😺 [GitHub](https://github.com/orgs/nodef/packages?repo_name=extra-boolean),
 🏃 [RunKit](https://npm.runkit.com/extra-boolean),
-📼 [Asciinema](https://asciinema.org/a/337221),
 🌔 [Minified](https://www.npmjs.com/package/extra-boolean.min),
 📜 [Files](https://unpkg.com/extra-boolean/),
 📰 [JSDoc](https://nodef.github.io/extra-boolean/),
@@ -29,7 +28,7 @@ the other gates? I answer them here.
 ```javascript
 const boolean = require("extra-boolean");
 // import * as boolean from "extra-boolean";
-// import * as boolean from "https://unpkg.com/extra-boolean@1.7.0/index.mjs"; (deno)
+// import * as boolean from "https://unpkg.com/extra-boolean@1.8.0/index.mjs"; (deno)
 
 boolean.parse("1");
 boolean.parse("not off");

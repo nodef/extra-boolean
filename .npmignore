@@ -6,7 +6,9 @@ tests/
 
 # Build
 .build/
+coverage/
 .travis.yml
+.coveralls.yml
 tsconfig.json
 rollup.config.js
 jestconfig.json

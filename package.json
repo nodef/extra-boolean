@@ -1,6 +1,6 @@
 {
   "name": "extra-boolean",
-  "version": "1.8.2",
+  "version": "1.8.4",
   "description": "Boolean data type has two possible truth values to represent logic.",
   "sideEffects": false,
   "main": "index.js",
@@ -34,7 +34,7 @@
   "devDependencies": {
     "@types/jest": "^26.0.24",
     "coveralls": "^3.1.1",
-    "extra-build": "^1.4.2",
+    "extra-build": "^1.4.8",
     "jest": "^27.0.6",
     "ts-jest": "^27.0.3"
   }

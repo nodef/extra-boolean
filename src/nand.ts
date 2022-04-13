@@ -2,7 +2,7 @@ import and from "./and";
 
 
 /**
- * Checks if any value is false.
+ * Check if any value is false.
  * @param a 1st boolean
  * @param b 2nd boolean
  * @param c 3rd boolean

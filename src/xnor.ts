@@ -2,7 +2,7 @@ import xor from "./xor";
 
 
 /**
- * Checks if even no. of values are true.
+ * Check if even number of values are true.
  * @param a 1st boolean
  * @param b 2nd boolean
  * @param c 3rd boolean

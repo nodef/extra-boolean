@@ -7,7 +7,7 @@ const RNEG = /\b(?:-|na|no|un|in|aft|bad|dis|lie|non|ben[dt]|den[iy]|empt|fail|f
 
 
 /**
- * Converts string to boolean.
+ * Convert string to boolean.
  * @param s a string
  * @example
  * ```javascript

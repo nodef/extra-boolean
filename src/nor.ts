@@ -2,7 +2,7 @@ import or from "./or";
 
 
 /**
- * Checks if all values are false.
+ * Check if all values are false.
  * @param a 1st boolean
  * @param b 2nd boolean
  * @param c 3rd boolean

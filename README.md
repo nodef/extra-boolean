@@ -62,23 +62,23 @@ boolean.count(true, false, true);
 
 ## Index
 
-| Name     | Action                                     |
-| -------- | ------------------------------------------ |
-| [is]     | Checks if value is boolean.                |
-| [parse]  | Converts string to boolean.                |
-| [not]    | Checks if value is false.                  |
-| [and]    | Checks if all values are true.             |
-| [or]     | Checks if any value is true.               |
-| [xor]    | Checks if odd no. of values are true.      |
-| [nand]   | Checks if any value is false.              |
-| [nor]    | Checks if all values are false.            |
-| [xnor]   | Checks if even no. of values are true.     |
-| [eq]     | Checks if antecedent ⇔ consequent (a ⇔ b). |
-| [neq]    | Checks if antecedent ⇎ consequent (a ⇎ b). |
-| [imply]  | Checks if antecedent ⇒ consequent (a ⇒ b). |
-| [nimply] | Checks if antecedent ⇏ consequent (a ⇏ b). |
-| [select] | Checks if ith value is true.               |
-| [count]  | Counts no. of true values.                 |
+| Name     | Action                                    |
+| -------- | ----------------------------------------- |
+| [is]     | Check if value is boolean.                |
+| [parse]  | Convert string to boolean.                |
+| [not]    | Check if value is false.                  |
+| [and]    | Check if all values are true.             |
+| [or]     | Check if any value is true.               |
+| [xor]    | Check if odd number of values are true.   |
+| [nand]   | Check if any value is false.              |
+| [nor]    | Check if all values are false.            |
+| [xnor]   | Check if even number of values are true.  |
+| [eq]     | Check if antecedent ⇔ consequent (a ⇔ b). |
+| [neq]    | Check if antecedent ⇎ consequent (a ⇎ b). |
+| [imply]  | Check if antecedent ⇒ consequent (a ⇒ b). |
+| [nimply] | Check if antecedent ⇏ consequent (a ⇏ b). |
+| [select] | Check if ith value is true.               |
+| [count]  | Count number of true values.              |
 
 <br>
 <br>

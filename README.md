@@ -1,10 +1,8 @@
 [Boolean] data type has two possible truth values to represent logic.<br>
-📦 [NPM](https://www.npmjs.com/package/extra-boolean),
-😺 [GitHub](https://github.com/orgs/nodef/packages?repo_name=extra-boolean),
-🏃 [RunKit](https://npm.runkit.com/extra-boolean),
-🌔 [Minified](https://www.npmjs.com/package/extra-boolean.min),
+📦 [Node.js](https://www.npmjs.com/package/extra-boolean),
+🌐 [Web](https://www.npmjs.com/package/extra-boolean.web),
 📜 [Files](https://unpkg.com/extra-boolean/),
-📰 [JSDoc](https://nodef.github.io/extra-boolean/),
+📰 [Docs](https://nodef.github.io/extra-boolean/).
 📘 [Wiki](https://github.com/nodef/extra-boolean/wiki/).
 
 Here is my implementation of digital logic gates in software. That includes
@@ -21,23 +19,29 @@ which returns `true` only if all inputs are the same (standard [xnor] returns
 You know the [and] of 2-inputs, but what of 1-input? What of 0? And what of
 the other gates? I answer them here.
 
-> Stability: Experimental.
+This package is available in *Node.js* and *Web* formats. The web format
+is exposed as `extra_boolean` standalone variable and can be loaded from
+[jsDelivr CDN].
+
+> Stability: [Experimental](https://www.youtube.com/watch?v=L1j93RnIxEo).
+
+[jsDelivr CDN]: https://cdn.jsdelivr.net/npm/extra-boolean.web/index.js
 
 <br>
 
 ```javascript
-const boolean = require("extra-boolean");
+const boolean = require('extra-boolean');
 // import * as boolean from "extra-boolean";
 // import * as boolean from "https://unpkg.com/extra-boolean@1.8.0/index.mjs"; (deno)
 
-boolean.parse("1");
-boolean.parse("not off");
-boolean.parse("truthy");
+boolean.parse('1');
+boolean.parse('not off');
+boolean.parse('truthy');
 // true
 
-boolean.parse("not true");
-boolean.parse("inactive");
-boolean.parse("disabled");
+boolean.parse('not true');
+boolean.parse('inactive');
+boolean.parse('disabled');
 // false
 
 boolean.imply(true, false);
@@ -62,46 +66,49 @@ boolean.count(true, false, true);
 
 ## Index
 
-| Name     | Action                                    |
-| -------- | ----------------------------------------- |
-| [is]     | Check if value is boolean.                |
-| [parse]  | Convert string to boolean.                |
-| [not]    | Check if value is false.                  |
-| [and]    | Check if all values are true.             |
-| [or]     | Check if any value is true.               |
-| [xor]    | Check if odd number of values are true.   |
-| [nand]   | Check if any value is false.              |
-| [nor]    | Check if all values are false.            |
-| [xnor]   | Check if even number of values are true.  |
-| [eq]     | Check if antecedent ⇔ consequent (a ⇔ b). |
-| [neq]    | Check if antecedent ⇎ consequent (a ⇎ b). |
-| [imply]  | Check if antecedent ⇒ consequent (a ⇒ b). |
+| Property | Description |
+|  ----  |  ----  |
+| [is] | Check if value is boolean. |
+| [parse] | Convert string to boolean. |
+| [not] | Check if value is false. |
+| [imply] | Check if antecedent ⇒ consequent (a ⇒ b). |
 | [nimply] | Check if antecedent ⇏ consequent (a ⇏ b). |
-| [select] | Check if ith value is true.               |
-| [count]  | Count number of true values.              |
+| [eq] | Check if antecedent ⇔ consequent (a ⇔ b). |
+| [neq] | Check if antecedent ⇎ consequent (a ⇎ b). |
+| [imp] | Check if antecedent ⇒ consequent (a ⇒ b). |
+| [eqv] | Check if antecedent ⇔ consequent (a ⇔ b). |
+| [and] | Check if all values are true. |
+| [nand] | Check if any value is false. |
+| [or] | Check if any value is true. |
+| [nor] | Check if all values are false. |
+| [xor] | Check if odd number of values are true. |
+| [xnor] | Check if even number of values are true. |
+| [count] | Count number of true values. |
+| [select] | Check if ith value is true. |
 
 <br>
 <br>
 
 [![](https://img.youtube.com/vi/6mMK6iSZsAs/maxresdefault.jpg)](https://www.youtube.com/watch?v=6mMK6iSZsAs)
 
-[![](https://api.travis-ci.com/nodef/extra-boolean.svg)](https://travis-ci.com/github/nodef/extra-boolean)
 [![](https://coveralls.io/repos/github/nodef/extra-boolean/badge.svg?branch=master)](https://coveralls.io/github/nodef/extra-boolean?branch=master)
 
 [Boolean]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean
 ["boolean"]: https://www.npmjs.com/package/boolean
-[is]: https://github.com/nodef/extra-boolean/wiki/is
-[parse]: https://github.com/nodef/extra-boolean/wiki/parse
-[xor]: https://github.com/nodef/extra-boolean/wiki/xor
-[not]: https://github.com/nodef/extra-boolean/wiki/not
-[and]: https://github.com/nodef/extra-boolean/wiki/and
-[or]: https://github.com/nodef/extra-boolean/wiki/or
-[nand]: https://github.com/nodef/extra-boolean/wiki/nand
-[nor]: https://github.com/nodef/extra-boolean/wiki/nor
-[xnor]: https://github.com/nodef/extra-boolean/wiki/xnor
-[eq]: https://github.com/nodef/extra-boolean/wiki/eq
-[imply]: https://github.com/nodef/extra-boolean/wiki/imply
-[nimply]: https://github.com/nodef/extra-boolean/wiki/nimply
-[select]: https://github.com/nodef/extra-boolean/wiki/select
-[count]: https://github.com/nodef/extra-boolean/wiki/count
-[neq]: https://github.com/nodef/extra-boolean/wiki/neq
+[not]: https://nodef.github.io/extra-boolean/modules.html#not
+[and]: https://nodef.github.io/extra-boolean/modules.html#and
+[or]: https://nodef.github.io/extra-boolean/modules.html#or
+[xor]: https://nodef.github.io/extra-boolean/modules.html#xor
+[nand]: https://nodef.github.io/extra-boolean/modules.html#nand
+[nor]: https://nodef.github.io/extra-boolean/modules.html#nor
+[xnor]: https://nodef.github.io/extra-boolean/modules.html#xnor
+[imply]: https://nodef.github.io/extra-boolean/modules.html#imply
+[eq]: https://nodef.github.io/extra-boolean/modules.html#eq
+[nimply]: https://nodef.github.io/extra-boolean/modules.html#nimply
+[neq]: https://nodef.github.io/extra-boolean/modules.html#neq
+[select]: https://nodef.github.io/extra-boolean/modules.html#select
+[count]: https://nodef.github.io/extra-boolean/modules.html#count
+[parse]: https://nodef.github.io/extra-boolean/modules.html#parse
+[is]: https://nodef.github.io/extra-boolean/modules.html#is
+[imp]: https://nodef.github.io/extra-boolean/modules.html#imp
+[eqv]: https://nodef.github.io/extra-boolean/modules.html#eqv

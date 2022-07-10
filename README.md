@@ -94,7 +94,17 @@ boolean.count(true, false, true);
 <br>
 
 
+## References
+
+- [boolean package by Golo Roden and contributors](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference)
+- [MDN Web docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference)
+
+<br>
+<br>
+
+
 [![](https://img.youtube.com/vi/6mMK6iSZsAs/maxresdefault.jpg)](https://www.youtube.com/watch?v=6mMK6iSZsAs)<br>
+[![DOI](https://zenodo.org/badge/162931162.svg)](https://zenodo.org/badge/latestdoi/162931162)
 
 
 [is]: https://nodef.github.io/extra-boolean/modules.html#is

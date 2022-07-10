@@ -5,7 +5,7 @@
 // -----
 
 /**
- * Check if value is a boolean.
+ * Check if a value is boolean.
  * @param v a value
  * @returns is boolean?
  */
@@ -20,7 +20,7 @@ const RFALSE  = /\b(?:f|n|0)\b|(?:fal|off|dim|end|low|old|back|cold|cool|dark|de
 const RNEGATE = /\b(?:-|na|no|un|in|aft|bad|dis|lie|non|ben[dt]|den[iy]|empt|fail|fake|hate|los[es]|stop|decli|defea|destr|never|negat|refus|rejec|forget|shr[iu]nk|against|is.?nt|can.?(?:no)?t)|(?:hind)/gi;
 
 /**
- * Convert string to boolean.
+ * Convert a string to boolean.
  * @param s a string
  * @returns s represents true?
  */
@@ -39,7 +39,7 @@ export function parse(s: string): boolean {
 // ------
 
 /**
- * Check if value is false.
+ * Check if a boolean is false.
  * @param a a boolean
  * @returns ¬a?
  */
@@ -100,7 +100,7 @@ export function neq(a: boolean, b: boolean): boolean {
 // -----
 
 /**
- * Check if all values are true.
+ * Check if all booleans are true.
  * @param a 1st boolean
  * @param b 2nd boolean
  * @param c 3rd boolean
@@ -118,7 +118,7 @@ export function and(a: boolean=true, b: boolean=true, c:boolean=true, d: boolean
 
 
 /**
- * Check if any value is false.
+ * Check if any boolean is false.
  * @param a 1st boolean
  * @param b 2nd boolean
  * @param c 3rd boolean
@@ -135,7 +135,7 @@ export function nand(a: boolean=true, b: boolean=true, c:boolean=true, d: boolea
 }
 
 /**
- * Check if any value is true.
+ * Check if any boolean is true.
  * @param a 1st boolean
  * @param b 2nd boolean
  * @param c 3rd boolean
@@ -153,7 +153,7 @@ export function or(a: boolean=false, b: boolean=false, c:boolean=false, d: boole
 
 
 /**
- * Check if all values are false.
+ * Check if all booleans are false.
  * @param a 1st boolean
  * @param b 2nd boolean
  * @param c 3rd boolean
@@ -171,7 +171,7 @@ export function nor(a: boolean=false, b: boolean=false, c:boolean=false, d: bool
 
 
 /**
- * Check if odd number of values are true.
+ * Check if odd number of booleans are true.
  * @param a 1st boolean
  * @param b 2nd boolean
  * @param c 3rd boolean
@@ -189,7 +189,7 @@ export function xor(a: boolean=false, b: boolean=false, c:boolean=false, d: bool
 
 
 /**
- * Check if even number of values are true.
+ * Check if even number of booleans are true.
  * @param a 1st boolean
  * @param b 2nd boolean
  * @param c 3rd boolean
@@ -212,7 +212,7 @@ export function xnor(a: boolean=false, b: boolean=false, c:boolean=false, d: boo
 // ------
 
 /**
- * Count number of true values.
+ * Count number of true booleans.
  * @param a 1st boolean
  * @param b 2nd boolean
  * @param c 3rd boolean
@@ -231,7 +231,7 @@ export function count(a: boolean=false, b: boolean=false, c:boolean=false, d: bo
 
 
 /**
- * Check if ith value is true.
+ * Check if iᵗʰ boolean is true.
  * @param i index
  * @param a 1st boolean
  * @param b 2nd boolean

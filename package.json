@@ -1,6 +1,6 @@
 {
   "name": "extra-boolean",
-  "version": "1.9.4",
+  "version": "1.10.0",
   "description": "A collection of common boolean functions.",
   "sideEffects": false,
   "main": "index.js",
@@ -10,9 +10,10 @@
     "import": "./index.mjs"
   },
   "scripts": {
-    "test": "exit",
+    "test": "jest",
     "build": "node ./build",
-    "deploy": "node ./build deploy"
+    "publish-docs": "node ./build publish-docs",
+    "publish-packages": "node ./build publish-packages"
   },
   "keywords": [
     "extra",
@@ -33,8 +34,11 @@
   "devDependencies": {
     "@rollup/plugin-commonjs": "^22.0.1",
     "@rollup/plugin-node-resolve": "^13.3.0",
-    "extra-build": "^2.1.31",
+    "@types/jest": "^28.1.6",
+    "extra-build": "^2.2.3",
+    "jest": "^28.1.3",
     "rollup-plugin-cleanup": "^3.2.1",
-    "rollup-plugin-dts": "^4.2.2"
+    "rollup-plugin-dts": "^4.2.2",
+    "ts-jest": "^28.0.7"
   }
 }

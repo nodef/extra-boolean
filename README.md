@@ -105,6 +105,9 @@ boolean.count(true, false, true);
 
 [![](https://img.youtube.com/vi/6mMK6iSZsAs/maxresdefault.jpg)](https://www.youtube.com/watch?v=6mMK6iSZsAs)<br>
 [![DOI](https://zenodo.org/badge/162931162.svg)](https://zenodo.org/badge/latestdoi/162931162)
+[![Coverage Status](https://coveralls.io/repos/github/nodef/extra-bit/badge.svg)](https://coveralls.io/github/nodef/extra-boolean)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/4df603a5ea361f324e9f/test_coverage)](https://codeclimate.com/github/nodef/extra-boolean/test_coverage)
+[![Maintainability](https://api.codeclimate.com/v1/badges/4df603a5ea361f324e9f/maintainability)](https://codeclimate.com/github/nodef/extra-boolean/maintainability)
 
 
 [is]: https://nodef.github.io/extra-boolean/modules.html#is

@@ -1,4 +1,19 @@
 import * as boolean from "../src";
+import {is}     from "../src";
+import {parse}  from "../src";
+import {not}    from "../src";
+import {imply}  from "../src";
+import {nimply} from "../src";
+import {eq}     from "../src";
+import {neq}    from "../src";
+import {and}    from "../src";
+import {nand}   from "../src";
+import {or}     from "../src";
+import {nor}    from "../src";
+import {xor}    from "../src";
+import {xnor}   from "../src";
+import {count}  from "../src";
+import {select} from "../src";
 
 
 
@@ -46,276 +61,276 @@ test("example1", () => {
 
 
 test("is", () => {
-  var a = boolean.is(false);
+  var a = is(false);
   expect(a).toBe(true);
-  var a = boolean.is(0);
+  var a = is(0);
   expect(a).toBe(false);
 });
 
 
 test("parse", () => {
-  var a = boolean.parse("1");
+  var a = parse("1");
   expect(a).toBe(true);
-  var a = boolean.parse("truthy");
+  var a = parse("truthy");
   expect(a).toBe(true);
-  var a = boolean.parse("not off");
+  var a = parse("not off");
   expect(a).toBe(true);
-  var a = boolean.parse("enabled");
+  var a = parse("enabled");
   expect(a).toBe(true);
-  var a = boolean.parse("0");
+  var a = parse("0");
   expect(a).toBe(false);
-  var a = boolean.parse("not true");
+  var a = parse("not true");
   expect(a).toBe(false);
-  var a = boolean.parse("inactive");
+  var a = parse("inactive");
   expect(a).toBe(false);
-  var a = boolean.parse("disabled");
+  var a = parse("disabled");
   expect(a).toBe(false);
 });
 
 
 test("not", () => {
-  var a = boolean.not(false);
+  var a = not(false);
   expect(a).toBe(true);
-  var a = boolean.not(true);
+  var a = not(true);
   expect(a).toBe(false);
 });
 
 
 test("imply", () => {
-  var a = boolean.imply(true, true);
+  var a = imply(true, true);
   expect(a).toBe(true);
-  var a = boolean.imply(false, true);
+  var a = imply(false, true);
   expect(a).toBe(true);
-  var a = boolean.imply(false, false);
+  var a = imply(false, false);
   expect(a).toBe(true);
-  var a = boolean.imply(true, false);
+  var a = imply(true, false);
   expect(a).toBe(false);
 });
 
 
 test("nimply", () => {
-  var a = boolean.nimply(true, false);
+  var a = nimply(true, false);
   expect(a).toBe(true);
-  var a = boolean.nimply(true, true);
+  var a = nimply(true, true);
   expect(a).toBe(false);
-  var a = boolean.nimply(false, true);
+  var a = nimply(false, true);
   expect(a).toBe(false);
-  var a = boolean.nimply(false, false);
+  var a = nimply(false, false);
   expect(a).toBe(false);
 });
 
 
 test("eq", () => {
-  var a = boolean.eq(true, true);
+  var a = eq(true, true);
   expect(a).toBe(true);
-  var a = boolean.eq(false, false);
+  var a = eq(false, false);
   expect(a).toBe(true);
-  var a = boolean.eq(true, false);
+  var a = eq(true, false);
   expect(a).toBe(false);
-  var a = boolean.eq(false, true);
+  var a = eq(false, true);
   expect(a).toBe(false);
 });
 
 
 test("neq", () => {
-  var a = boolean.neq(true, false);
+  var a = neq(true, false);
   expect(a).toBe(true);
-  var a = boolean.neq(false, true);
+  var a = neq(false, true);
   expect(a).toBe(true);
-  var a = boolean.neq(true, true);
+  var a = neq(true, true);
   expect(a).toBe(false);
-  var a = boolean.neq(false, false);
+  var a = neq(false, false);
   expect(a).toBe(false);
 });
 
 
 test("and", () => {
-  var a = boolean.and();
+  var a = and();
   expect(a).toBe(true);
-  var a = boolean.and(true);
+  var a = and(true);
   expect(a).toBe(true);
-  var a = boolean.and(false);
+  var a = and(false);
   expect(a).toBe(false);
-  var a = boolean.and(true, true);
+  var a = and(true, true);
   expect(a).toBe(true);
-  var a = boolean.and(true, false);
+  var a = and(true, false);
   expect(a).toBe(false);
-  var a = boolean.and(false, true);
+  var a = and(false, true);
   expect(a).toBe(false);
-  var a = boolean.and(false, false);
+  var a = and(false, false);
   expect(a).toBe(false);
-  var a = boolean.and(true, true, true, true, true, true, true, true);
+  var a = and(true, true, true, true, true, true, true, true);
   expect(a).toBe(true);
-  var a = boolean.and(true, true, true, true, true, true, true, false);
+  var a = and(true, true, true, true, true, true, true, false);
   expect(a).toBe(false);
 });
 
 
 test("nand", () => {
-  var a = boolean.nand();
+  var a = nand();
   expect(a).toBe(false);
-  var a = boolean.nand(false);
+  var a = nand(false);
   expect(a).toBe(true);
-  var a = boolean.nand(true);
+  var a = nand(true);
   expect(a).toBe(false);
-  var a = boolean.nand(true, false);
+  var a = nand(true, false);
   expect(a).toBe(true);
-  var a = boolean.nand(false, true);
+  var a = nand(false, true);
   expect(a).toBe(true);
-  var a = boolean.nand(false, false);
+  var a = nand(false, false);
   expect(a).toBe(true);
-  var a = boolean.nand(true, true);
+  var a = nand(true, true);
   expect(a).toBe(false);
-  var a = boolean.nand(true, true, true, true, true, true, true, false);
+  var a = nand(true, true, true, true, true, true, true, false);
   expect(a).toBe(true);
-  var a = boolean.nand(true, true, true, true, true, true, true, true);
+  var a = nand(true, true, true, true, true, true, true, true);
   expect(a).toBe(false);
 });
 
 
 test("or", () => {
-  var a = boolean.or();
+  var a = or();
   expect(a).toBe(false);
-  var a = boolean.or(true);
+  var a = or(true);
   expect(a).toBe(true);
-  var a = boolean.or(false);
+  var a = or(false);
   expect(a).toBe(false);
-  var a = boolean.or(true, true);
+  var a = or(true, true);
   expect(a).toBe(true);
-  var a = boolean.or(true, false);
+  var a = or(true, false);
   expect(a).toBe(true);
-  var a = boolean.or(false, true);
+  var a = or(false, true);
   expect(a).toBe(true);
-  var a = boolean.or(false, false);
+  var a = or(false, false);
   expect(a).toBe(false);
-  var a = boolean.or(false, false, false, false, false, false, false, true);
+  var a = or(false, false, false, false, false, false, false, true);
   expect(a).toBe(true);
-  var a = boolean.or(false, false, false, false, false, false, false, false);
+  var a = or(false, false, false, false, false, false, false, false);
   expect(a).toBe(false);
 });
 
 
 test("nor", () => {
-  var a = boolean.nor();
+  var a = nor();
   expect(a).toBe(true);
-  var a = boolean.nor(false);
+  var a = nor(false);
   expect(a).toBe(true);
-  var a = boolean.nor(true);
+  var a = nor(true);
   expect(a).toBe(false);
-  var a = boolean.nor(false, false);
+  var a = nor(false, false);
   expect(a).toBe(true);
-  var a = boolean.nor(true, true);
+  var a = nor(true, true);
   expect(a).toBe(false);
-  var a = boolean.nor(true, false);
+  var a = nor(true, false);
   expect(a).toBe(false);
-  var a = boolean.nor(false, true);
+  var a = nor(false, true);
   expect(a).toBe(false);
-  var a = boolean.nor(false, false, false, false, false, false, false, false);
+  var a = nor(false, false, false, false, false, false, false, false);
   expect(a).toBe(true);
-  var a = boolean.nor(false, false, false, false, false, false, false, true);
+  var a = nor(false, false, false, false, false, false, false, true);
   expect(a).toBe(false);
 });
 
 
 test("xor", () => {
-  var a = boolean.xor();
+  var a = xor();
   expect(a).toBe(false);
-  var a = boolean.xor(true);
+  var a = xor(true);
   expect(a).toBe(true);
-  var a = boolean.xor(false);
+  var a = xor(false);
   expect(a).toBe(false);
-  var a = boolean.xor(true, false);
+  var a = xor(true, false);
   expect(a).toBe(true);
-  var a = boolean.xor(false, true);
+  var a = xor(false, true);
   expect(a).toBe(true);
-  var a = boolean.xor(true, true);
+  var a = xor(true, true);
   expect(a).toBe(false);
-  var a = boolean.xor(false, false);
+  var a = xor(false, false);
   expect(a).toBe(false);
-  var a = boolean.xor(false, false, false, false, false, false, false, true);
+  var a = xor(false, false, false, false, false, false, false, true);
   expect(a).toBe(true);
-  var a = boolean.xor(false, false, false, false, false, false, true, true);
+  var a = xor(false, false, false, false, false, false, true, true);
   expect(a).toBe(false);
 });
 
 
 test("xnor", () => {
-  var a = boolean.xnor();
+  var a = xnor();
   expect(a).toBe(true);
-  var a = boolean.xnor(false);
+  var a = xnor(false);
   expect(a).toBe(true);
-  var a = boolean.xnor(true);
+  var a = xnor(true);
   expect(a).toBe(false);
-  var a = boolean.xnor(true, true);
+  var a = xnor(true, true);
   expect(a).toBe(true);
-  var a = boolean.xnor(false, false);
+  var a = xnor(false, false);
   expect(a).toBe(true);
-  var a = boolean.xnor(true, false);
+  var a = xnor(true, false);
   expect(a).toBe(false);
-  var a = boolean.xnor(false, true);
+  var a = xnor(false, true);
   expect(a).toBe(false);
-  var a = boolean.xnor(false, false, false, false, false, false, false, false);
+  var a = xnor(false, false, false, false, false, false, false, false);
   expect(a).toBe(true);
-  var a = boolean.xnor(false, false, false, false, false, true, true, true);
+  var a = xnor(false, false, false, false, false, true, true, true);
   expect(a).toBe(false);
 });
 
 
 test("count", () => {
-  var a = boolean.count();
+  var a = count();
   expect(a).toBe(0);
-  var a = boolean.count(false);
+  var a = count(false);
   expect(a).toBe(0);
-  var a = boolean.count(true);
+  var a = count(true);
   expect(a).toBe(1);
-  var a = boolean.count(false, false);
+  var a = count(false, false);
   expect(a).toBe(0);
-  var a = boolean.count(true, false);
+  var a = count(true, false);
   expect(a).toBe(1);
-  var a = boolean.count(false, true);
+  var a = count(false, true);
   expect(a).toBe(1);
-  var a = boolean.count(true, true);
+  var a = count(true, true);
   expect(a).toBe(2);
-  var a = boolean.count(false, false, false, false, false, false, false, false);
+  var a = count(false, false, false, false, false, false, false, false);
   expect(a).toBe(0);
-  var a = boolean.count(false, false, false, false, false, false, false, true);
+  var a = count(false, false, false, false, false, false, false, true);
   expect(a).toBe(1);
-  var a = boolean.count(false, false, false, false, false, true, false, true);
+  var a = count(false, false, false, false, false, true, false, true);
   expect(a).toBe(2);
-  var a = boolean.count(false, true, false, false, false, false, true, true);
+  var a = count(false, true, false, false, false, false, true, true);
   expect(a).toBe(3);
-  var a = boolean.count(false, true, false, false, false, true, true, true);
+  var a = count(false, true, false, false, false, true, true, true);
   expect(a).toBe(4);
-  var a = boolean.count(true, false, false, true, false, true, true, true);
+  var a = count(true, false, false, true, false, true, true, true);
   expect(a).toBe(5);
-  var a = boolean.count(true, true, true, false, false, true, true, true);
+  var a = count(true, true, true, false, false, true, true, true);
   expect(a).toBe(6);
-  var a = boolean.count(true, false, true, true, true, true, true, true);
+  var a = count(true, false, true, true, true, true, true, true);
   expect(a).toBe(7);
-  var a = boolean.count(true, true, true, true, true, true, true, true);
+  var a = count(true, true, true, true, true, true, true, true);
   expect(a).toBe(8);
 });
 
 
 test("select", () => {
-  var a = boolean.select(0);
+  var a = select(0);
   expect(a).toBe(false);
-  var a = boolean.select(8);
+  var a = select(8);
   expect(a).toBe(false);
-  var a = boolean.select(0, true);
+  var a = select(0, true);
   expect(a).toBe(true);
-  var a = boolean.select(1, true);
+  var a = select(1, true);
   expect(a).toBe(false);
-  var a = boolean.select(2, true, false, true, false);
+  var a = select(2, true, false, true, false);
   expect(a).toBe(true);
-  var a = boolean.select(3, true, false, true, false);
+  var a = select(3, true, false, true, false);
   expect(a).toBe(false);
-  var a = boolean.select(4, true, false, false, false, true, false, false, false);
+  var a = select(4, true, false, false, false, true, false, false, false);
   expect(a).toBe(true);
-  var a = boolean.select(5, true, false, false, false, true, false, false, false);
+  var a = select(5, true, false, false, false, true, false, false, false);
   expect(a).toBe(false);
-  var a = boolean.select(6, true, false, false, false, true, false, false, false);
+  var a = select(6, true, false, false, false, true, false, false, false);
   expect(a).toBe(false);
-  var a = boolean.select(7, true, false, false, false, true, false, false, false);
+  var a = select(7, true, false, false, false, true, false, false, false);
   expect(a).toBe(false);
 });

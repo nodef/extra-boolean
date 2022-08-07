@@ -110,18 +110,18 @@ boolean.count(true, false, true);
 [![Maintainability](https://api.codeclimate.com/v1/badges/4df603a5ea361f324e9f/maintainability)](https://codeclimate.com/github/nodef/extra-boolean/maintainability)
 
 
-[is]: https://nodef.github.io/extra-boolean/modules.html#is
-[parse]: https://nodef.github.io/extra-boolean/modules.html#parse
-[not]: https://nodef.github.io/extra-boolean/modules.html#not
-[imply]: https://nodef.github.io/extra-boolean/modules.html#imply
-[nimply]: https://nodef.github.io/extra-boolean/modules.html#nimply
-[eq]: https://nodef.github.io/extra-boolean/modules.html#eq
-[neq]: https://nodef.github.io/extra-boolean/modules.html#neq
-[and]: https://nodef.github.io/extra-boolean/modules.html#and
-[nand]: https://nodef.github.io/extra-boolean/modules.html#nand
-[or]: https://nodef.github.io/extra-boolean/modules.html#or
-[nor]: https://nodef.github.io/extra-boolean/modules.html#nor
-[xor]: https://nodef.github.io/extra-boolean/modules.html#xor
-[xnor]: https://nodef.github.io/extra-boolean/modules.html#xnor
-[count]: https://nodef.github.io/extra-boolean/modules.html#count
-[select]: https://nodef.github.io/extra-boolean/modules.html#select
+[is]: https://nodef.github.io/extra-boolean/functions/is.html
+[parse]: https://nodef.github.io/extra-boolean/functions/parse.html
+[not]: https://nodef.github.io/extra-boolean/functions/not.html
+[imply]: https://nodef.github.io/extra-boolean/functions/imply.html
+[nimply]: https://nodef.github.io/extra-boolean/functions/nimply.html
+[eq]: https://nodef.github.io/extra-boolean/functions/eq.html
+[neq]: https://nodef.github.io/extra-boolean/functions/neq.html
+[and]: https://nodef.github.io/extra-boolean/functions/and.html
+[nand]: https://nodef.github.io/extra-boolean/functions/nand.html
+[or]: https://nodef.github.io/extra-boolean/functions/or.html
+[nor]: https://nodef.github.io/extra-boolean/functions/nor.html
+[xor]: https://nodef.github.io/extra-boolean/functions/xor.html
+[xnor]: https://nodef.github.io/extra-boolean/functions/xnor.html
+[count]: https://nodef.github.io/extra-boolean/functions/count.html
+[select]: https://nodef.github.io/extra-boolean/functions/select.html

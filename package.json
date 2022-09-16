@@ -1,6 +1,6 @@
 {
   "name": "extra-boolean",
-  "version": "1.10.5",
+  "version": "1.10.6",
   "description": "A collection of common boolean functions.",
   "sideEffects": false,
   "main": "index.js",

@@ -1,19 +1,21 @@
 import * as boolean from "../src";
-import {is}     from "../src";
-import {parse}  from "../src";
-import {not}    from "../src";
-import {imply}  from "../src";
-import {nimply} from "../src";
-import {eq}     from "../src";
-import {neq}    from "../src";
-import {and}    from "../src";
-import {nand}   from "../src";
-import {or}     from "../src";
-import {nor}    from "../src";
-import {xor}    from "../src";
-import {xnor}   from "../src";
-import {count}  from "../src";
-import {select} from "../src";
+import {
+  is,
+  parse,
+  not,
+  imply,
+  nimply,
+  eq,
+  neq,
+  and,
+  nand,
+  or,
+  nor,
+  xor,
+  xnor,
+  count,
+  select,
+} from "../src";
 
 
 
@@ -60,6 +62,9 @@ test("example1", () => {
 
 
 
+// ABOUT
+// -----
+
 test("is", () => {
   var a = is(false);
   expect(a).toBe(true);
@@ -87,6 +92,11 @@ test("parse", () => {
   expect(a).toBe(false);
 });
 
+
+
+
+// SINGLE
+// ------
 
 test("not", () => {
   var a = not(false);
@@ -143,6 +153,11 @@ test("neq", () => {
   expect(a).toBe(false);
 });
 
+
+
+
+// BASIC
+// -----
 
 test("and", () => {
   var a = and();
@@ -275,6 +290,11 @@ test("xnor", () => {
   expect(a).toBe(false);
 });
 
+
+
+
+// SPECIAL
+// -------
 
 test("count", () => {
   var a = count();

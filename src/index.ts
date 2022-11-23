@@ -209,7 +209,7 @@ export function xnor(a: boolean=false, b: boolean=false, c:boolean=false, d: boo
 
 
 // SPECIAL
-// ------
+// -------
 
 /**
  * Count number of true booleans.

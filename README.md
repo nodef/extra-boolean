@@ -111,18 +111,18 @@ boolean.count(true, false, true);
 [![Maintainability](https://api.codeclimate.com/v1/badges/4df603a5ea361f324e9f/maintainability)](https://codeclimate.com/github/nodef/extra-boolean/maintainability)
 
 
-[is]: https://nodef.github.io/extra-boolean/functions/is.html
-[parse]: https://nodef.github.io/extra-boolean/functions/parse.html
-[not]: https://nodef.github.io/extra-boolean/functions/not.html
-[imply]: https://nodef.github.io/extra-boolean/functions/imply.html
-[nimply]: https://nodef.github.io/extra-boolean/functions/nimply.html
-[eq]: https://nodef.github.io/extra-boolean/functions/eq.html
-[neq]: https://nodef.github.io/extra-boolean/functions/neq.html
-[and]: https://nodef.github.io/extra-boolean/functions/and.html
-[nand]: https://nodef.github.io/extra-boolean/functions/nand.html
-[or]: https://nodef.github.io/extra-boolean/functions/or.html
-[nor]: https://nodef.github.io/extra-boolean/functions/nor.html
-[xor]: https://nodef.github.io/extra-boolean/functions/xor.html
-[xnor]: https://nodef.github.io/extra-boolean/functions/xnor.html
-[count]: https://nodef.github.io/extra-boolean/functions/count.html
-[select]: https://nodef.github.io/extra-boolean/functions/select.html
+[is]: https://github.com/nodef/extra-boolean/wiki/is
+[parse]: https://github.com/nodef/extra-boolean/wiki/parse
+[not]: https://github.com/nodef/extra-boolean/wiki/not
+[imply]: https://github.com/nodef/extra-boolean/wiki/imply
+[nimply]: https://github.com/nodef/extra-boolean/wiki/nimply
+[eq]: https://github.com/nodef/extra-boolean/wiki/eq
+[neq]: https://github.com/nodef/extra-boolean/wiki/neq
+[and]: https://github.com/nodef/extra-boolean/wiki/and
+[nand]: https://github.com/nodef/extra-boolean/wiki/nand
+[or]: https://github.com/nodef/extra-boolean/wiki/or
+[nor]: https://github.com/nodef/extra-boolean/wiki/nor
+[xor]: https://github.com/nodef/extra-boolean/wiki/xor
+[xnor]: https://github.com/nodef/extra-boolean/wiki/xnor
+[count]: https://github.com/nodef/extra-boolean/wiki/count
+[select]: https://github.com/nodef/extra-boolean/wiki/select

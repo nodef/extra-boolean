@@ -21,7 +21,7 @@ can help you make custom gates, such as an *alternate* concept of **xnor**
 which returns `true` only if all inputs are the same (standard [xnor] returns
 `true` if even inputs are `true`). These gates can handle up to eight inputs.
 
-The [parse] function is influenced by [{boolean}] package, and is quite good at
+The [parse] function is influenced by [(boolean)] package, and is quite good at
 translating `string` to `boolean`. It can also handle double negatives, eg.
 `not inactive`. You know the [and] of 2-inputs, but what of 1-input? What of 0?
 And what of the other gates? I answer them here.
@@ -32,7 +32,7 @@ tag from the [jsDelivr CDN].
 
 [01wiki]: https://en.wikipedia.org/wiki/Boolean_data_type
 [Boolean]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean
-[{boolean}]: https://www.npmjs.com/package/boolean
+[(boolean)]: https://www.npmjs.com/package/boolean
 [jsDelivr CDN]: https://cdn.jsdelivr.net/npm/extra-boolean.web/index.js
 
 > Stability: [Experimental](https://www.youtube.com/watch?v=L1j93RnIxEo).

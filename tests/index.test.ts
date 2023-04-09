@@ -1,4 +1,3 @@
-import * as boolean from "../src";
 import {
   is,
   parse,
@@ -22,39 +21,39 @@ import {
 
 // 1. Basic tests.
 test("example1", () => {
-  var a = boolean.parse("1");
+  var a = parse("1");
   expect(a).toBe(true);
-  var a = boolean.parse("not off");
+  var a = parse("not off");
   expect(a).toBe(true);
-  var a = boolean.parse("truthy");
+  var a = parse("truthy");
   expect(a).toBe(true);
   // → true
 
-  var a = boolean.parse("not true");
+  var a = parse("not true");
   expect(a).toBe(false);
-  var a = boolean.parse("inactive");
+  var a = parse("inactive");
   expect(a).toBe(false);
-  var a = boolean.parse("disabled");
+  var a = parse("disabled");
   expect(a).toBe(false);
   // → false
 
-  var a = boolean.imply(true, false);
+  var a = imply(true, false);
   expect(a).toBe(false);
   // → false
 
-  var a = boolean.eq(false, false);
+  var a = eq(false, false);
   expect(a).toBe(true);
   // → true
 
-  var a = boolean.xor(true, true, true);
+  var a = xor(true, true, true);
   expect(a).toBe(true);
   // → true
 
-  var a = boolean.select(1, true, false, true);
+  var a = select(1, true, false, true);
   expect(a).toBe(false);
   // → false                        ^
 
-  var b = boolean.count(true, false, true);
+  var b = count(true, false, true);
   expect(b).toBe(2);
   // → 2                 ^            ^
 });

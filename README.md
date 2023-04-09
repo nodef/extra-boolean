@@ -1,31 +1,38 @@
-A collection of common boolean functions.<br>
+[Boolean] data type has two possible truth values to represent logic.<br>
 📦 [Node.js](https://www.npmjs.com/package/extra-boolean),
 🌐 [Web](https://www.npmjs.com/package/extra-boolean.web),
 📜 [Files](https://unpkg.com/extra-boolean/),
 📰 [Docs](https://nodef.github.io/extra-boolean/).
 📘 [Wiki](https://github.com/nodef/extra-boolean/wiki/).
 
-[Boolean] data type has two possible truth values to represent logic.
-Here is my implementation of digital logic gates in software. That includes
+A **boolean** data type has two possible truth values, usually represented as
+`true` or `false`. It is named after *George Boole*, who first defined an
+algebraic system of logic in the mid 19th century [(REF)][01wiki]. Boolean
+functions can be used to perform logical operations in computer programming,
+such as in conditional statements, loops, and branching, to compare input values
+with a set of rules to determine the output.
+
+This is a collection of common boolean functions. It includes
 the basic gates [not], [and], [or], [xor]; their complements [nand], [nor],
 [xnor]; and 2 propositional logic (taught in discrete mathematics) gates
 [imply], [eq]; and their complements [nimply], [neq]. There is also a
 multiplexer, called [select], and a `true` counter, called [count]. [count]
 can help you make custom gates, such as an *alternate* concept of **xnor**
 which returns `true` only if all inputs are the same (standard [xnor] returns
-`true` if even inputs are `true`). All of them can handle upto 8 inputs.
+`true` if even inputs are `true`). These gates can handle up to eight inputs.
 
-[parse] is influenced by ["boolean"] package, and is quite good at translating
-`string` to `boolean`. It can also handle double negatives, eg. `not inactive`.
-You know the [and] of 2-inputs, but what of 1-input? What of 0? And what of
-the other gates? I answer them here.
+The [parse] function is influenced by [{boolean}] package, and is quite good at
+translating `string` to `boolean`. It can also handle double negatives, eg.
+`not inactive`. You know the [and] of 2-inputs, but what of 1-input? What of 0?
+And what of the other gates? I answer them here.
 
-This package is available in *Node.js* and *Web* formats. The web format
-is exposed as `extra_boolean` standalone variable and can be loaded from
-[jsDelivr CDN].
+This package is available in *Node.js* and *Web* formats. To use it on the web,
+simply use the `extra_boolean` global variable after loading with a `<script>`
+tag from the [jsDelivr CDN].
 
+[01wiki]: https://en.wikipedia.org/wiki/Boolean_data_type
 [Boolean]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean
-["boolean"]: https://www.npmjs.com/package/boolean
+[{boolean}]: https://www.npmjs.com/package/boolean
 [jsDelivr CDN]: https://cdn.jsdelivr.net/npm/extra-boolean.web/index.js
 
 > Stability: [Experimental](https://www.youtube.com/watch?v=L1j93RnIxEo).
@@ -33,33 +40,33 @@ is exposed as `extra_boolean` standalone variable and can be loaded from
 <br>
 
 ```javascript
-const boolean = require('extra-boolean');
-// import * as boolean from "extra-boolean";
-// import * as boolean from "https://unpkg.com/extra-boolean/index.mjs"; (deno)
+const xboolean = require('extra-boolean');
+// import * as xboolean from "extra-boolean";
+// import * as xboolean from "https://unpkg.com/extra-boolean/index.mjs"; (deno)
 
-boolean.parse('1');
-boolean.parse('not off');
-boolean.parse('truthy');
+xboolean.parse('1');
+xboolean.parse('not off');
+xboolean.parse('truthy');
 // → true
 
-boolean.parse('not true');
-boolean.parse('inactive');
-boolean.parse('disabled');
+xboolean.parse('not true');
+xboolean.parse('inactive');
+xboolean.parse('disabled');
 // → false
 
-boolean.imply(true, false);
+xboolean.imply(true, false);
 // → false
 
-boolean.eq(false, false);
+xboolean.eq(false, false);
 // → true
 
-boolean.xor(true, true, true);
+xboolean.xor(true, true, true);
 // → true
 
-boolean.select(1, true, false, true);
+xboolean.select(1, true, false, true);
 // → false                ^
 
-boolean.count(true, false, true);
+xboolean.count(true, false, true);
 // → 2         ^            ^
 ```
 
@@ -96,7 +103,7 @@ boolean.count(true, false, true);
 
 ## References
 
-- [boolean package by Golo Roden and contributors](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference)
+- [boolean package : Golo Roden and contributors](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference)
 - [MDN Web docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference)
 
 <br>

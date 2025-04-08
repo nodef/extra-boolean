@@ -116,7 +116,7 @@ xboolean.count(true, false, true);
 [![Coverage Status](https://coveralls.io/repos/github/nodef/extra-boolean/badge.svg?branch=master)](https://coveralls.io/github/nodef/extra-boolean?branch=master)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/4df603a5ea361f324e9f/test_coverage)](https://codeclimate.com/github/nodef/extra-boolean/test_coverage)
 [![Maintainability](https://api.codeclimate.com/v1/badges/4df603a5ea361f324e9f/maintainability)](https://codeclimate.com/github/nodef/extra-boolean/maintainability)
-
+![](https://ga-beacon.deno.dev/G-RC63DPBH3P:SH3Eq-NoQ9mwgYeHWxu7cw/github.com/nodef/extra-boolean)
 
 [is]: https://github.com/nodef/extra-boolean/wiki/is
 [parse]: https://github.com/nodef/extra-boolean/wiki/parse

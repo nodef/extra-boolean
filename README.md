@@ -1,9 +1,9 @@
 [Boolean] data type has two possible truth values to represent logic.<br>
-📦 [Node.js](https://www.npmjs.com/package/extra-boolean),
-🌐 [Web](https://www.npmjs.com/package/extra-boolean.web),
-📜 [Files](https://unpkg.com/extra-boolean/),
-📰 [Docs](https://nodef.github.io/extra-boolean/).
-📘 [Wiki](https://github.com/nodef/extra-boolean/wiki/).
+
+▌
+📦 [JSR](https://jsr.io/@nodef/extra-boolean),
+📦 [NPM](https://www.npmjs.com/package/extra-boolean),
+📰 [Docs](https://jsr.io/@nodef/extra-boolean/doc).
 
 A **boolean** data type has two possible truth values, usually represented as
 `true` or `false`. It is named after *George Boole*, who first defined an
@@ -26,23 +26,14 @@ translating `string` to `boolean`. It can also handle double negatives, eg.
 `not inactive`. You know the [and] of 2-inputs, but what of 1-input? What of 0?
 And what of the other gates? I answer them here.
 
-This package is available in *Node.js* and *Web* formats. To use it on the web,
-simply use the `extra_boolean` global variable after loading with a `<script>`
-tag from the [jsDelivr CDN].
-
 [01wiki]: https://en.wikipedia.org/wiki/Boolean_data_type
 [Boolean]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean
 [(boolean)]: https://www.npmjs.com/package/boolean
-[jsDelivr CDN]: https://cdn.jsdelivr.net/npm/extra-boolean.web/index.js
-
-> Stability: [Experimental](https://www.youtube.com/watch?v=L1j93RnIxEo).
 
 <br>
 
 ```javascript
-const xboolean = require('extra-boolean');
-// import * as xboolean from "extra-boolean";
-// import * as xboolean from "https://unpkg.com/extra-boolean/index.mjs"; (deno)
+import * as xboolean from "jsr:@nodef/extra-boolean";
 
 xboolean.parse('1');
 xboolean.parse('not off');
@@ -110,26 +101,22 @@ xboolean.count(true, false, true);
 <br>
 
 
-[![](https://img.youtube.com/vi/6mMK6iSZsAs/maxresdefault.jpg)](https://www.youtube.com/watch?v=6mMK6iSZsAs)<br>
+[![](https://raw.githubusercontent.com/qb40/designs/gh-pages/0/image/11.png)](https://wolfram77.github.io)<br>
 [![ORG](https://img.shields.io/badge/org-nodef-green?logo=Org)](https://nodef.github.io)
-[![DOI](https://zenodo.org/badge/162931162.svg)](https://zenodo.org/badge/latestdoi/162931162)
-[![Coverage Status](https://coveralls.io/repos/github/nodef/extra-boolean/badge.svg?branch=master)](https://coveralls.io/github/nodef/extra-boolean?branch=master)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/4df603a5ea361f324e9f/test_coverage)](https://codeclimate.com/github/nodef/extra-boolean/test_coverage)
-[![Maintainability](https://api.codeclimate.com/v1/badges/4df603a5ea361f324e9f/maintainability)](https://codeclimate.com/github/nodef/extra-boolean/maintainability)
 ![](https://ga-beacon.deno.dev/G-RC63DPBH3P:SH3Eq-NoQ9mwgYeHWxu7cw/github.com/nodef/extra-boolean)
 
-[is]: https://github.com/nodef/extra-boolean/wiki/is
-[parse]: https://github.com/nodef/extra-boolean/wiki/parse
-[not]: https://github.com/nodef/extra-boolean/wiki/not
-[imply]: https://github.com/nodef/extra-boolean/wiki/imply
-[nimply]: https://github.com/nodef/extra-boolean/wiki/nimply
-[eq]: https://github.com/nodef/extra-boolean/wiki/eq
-[neq]: https://github.com/nodef/extra-boolean/wiki/neq
-[and]: https://github.com/nodef/extra-boolean/wiki/and
-[nand]: https://github.com/nodef/extra-boolean/wiki/nand
-[or]: https://github.com/nodef/extra-boolean/wiki/or
-[nor]: https://github.com/nodef/extra-boolean/wiki/nor
-[xor]: https://github.com/nodef/extra-boolean/wiki/xor
-[xnor]: https://github.com/nodef/extra-boolean/wiki/xnor
-[count]: https://github.com/nodef/extra-boolean/wiki/count
-[select]: https://github.com/nodef/extra-boolean/wiki/select
+[is]: https://jsr.io/@nodef/extra-version/doc/~/is
+[parse]: https://jsr.io/@nodef/extra-version/doc/~/parse
+[not]: https://jsr.io/@nodef/extra-version/doc/~/not
+[imply]: https://jsr.io/@nodef/extra-version/doc/~/imply
+[nimply]: https://jsr.io/@nodef/extra-version/doc/~/nimply
+[eq]: https://jsr.io/@nodef/extra-version/doc/~/eq
+[neq]: https://jsr.io/@nodef/extra-version/doc/~/neq
+[and]: https://jsr.io/@nodef/extra-version/doc/~/and
+[nand]: https://jsr.io/@nodef/extra-version/doc/~/nand
+[or]: https://jsr.io/@nodef/extra-version/doc/~/or
+[nor]: https://jsr.io/@nodef/extra-version/doc/~/nor
+[xor]: https://jsr.io/@nodef/extra-version/doc/~/xor
+[xnor]: https://jsr.io/@nodef/extra-version/doc/~/xnor
+[count]: https://jsr.io/@nodef/extra-version/doc/~/count
+[select]: https://jsr.io/@nodef/extra-version/doc/~/select

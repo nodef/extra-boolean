@@ -105,18 +105,18 @@ xboolean.count(true, false, true);
 [![ORG](https://img.shields.io/badge/org-nodef-green?logo=Org)](https://nodef.github.io)
 ![](https://ga-beacon.deno.dev/G-RC63DPBH3P:SH3Eq-NoQ9mwgYeHWxu7cw/github.com/nodef/extra-boolean)
 
-[is]: https://jsr.io/@nodef/extra-version/doc/~/is
-[parse]: https://jsr.io/@nodef/extra-version/doc/~/parse
-[not]: https://jsr.io/@nodef/extra-version/doc/~/not
-[imply]: https://jsr.io/@nodef/extra-version/doc/~/imply
-[nimply]: https://jsr.io/@nodef/extra-version/doc/~/nimply
-[eq]: https://jsr.io/@nodef/extra-version/doc/~/eq
-[neq]: https://jsr.io/@nodef/extra-version/doc/~/neq
-[and]: https://jsr.io/@nodef/extra-version/doc/~/and
-[nand]: https://jsr.io/@nodef/extra-version/doc/~/nand
-[or]: https://jsr.io/@nodef/extra-version/doc/~/or
-[nor]: https://jsr.io/@nodef/extra-version/doc/~/nor
-[xor]: https://jsr.io/@nodef/extra-version/doc/~/xor
-[xnor]: https://jsr.io/@nodef/extra-version/doc/~/xnor
-[count]: https://jsr.io/@nodef/extra-version/doc/~/count
-[select]: https://jsr.io/@nodef/extra-version/doc/~/select
+[is]: https://jsr.io/@nodef/extra-boolean/doc/~/is
+[parse]: https://jsr.io/@nodef/extra-boolean/doc/~/parse
+[not]: https://jsr.io/@nodef/extra-boolean/doc/~/not
+[imply]: https://jsr.io/@nodef/extra-boolean/doc/~/imply
+[nimply]: https://jsr.io/@nodef/extra-boolean/doc/~/nimply
+[eq]: https://jsr.io/@nodef/extra-boolean/doc/~/eq
+[neq]: https://jsr.io/@nodef/extra-boolean/doc/~/neq
+[and]: https://jsr.io/@nodef/extra-boolean/doc/~/and
+[nand]: https://jsr.io/@nodef/extra-boolean/doc/~/nand
+[or]: https://jsr.io/@nodef/extra-boolean/doc/~/or
+[nor]: https://jsr.io/@nodef/extra-boolean/doc/~/nor
+[xor]: https://jsr.io/@nodef/extra-boolean/doc/~/xor
+[xnor]: https://jsr.io/@nodef/extra-boolean/doc/~/xnor
+[count]: https://jsr.io/@nodef/extra-boolean/doc/~/count
+[select]: https://jsr.io/@nodef/extra-boolean/doc/~/select

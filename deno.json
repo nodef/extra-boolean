@@ -1,6 +1,6 @@
 {
   "name": "@nodef/extra-boolean",
-  "version": "1.12.2",
+  "version": "1.12.4",
   "license": "MIT",
   "exports": "./index.ts",
   "exclude": [
@@ -10,4 +10,5 @@
   "imports": {
     "@std/assert": "jsr:@std/assert@^1.0.19",
     "@std/cli": "jsr:@std/cli@^1.0.32"
+  }
 }

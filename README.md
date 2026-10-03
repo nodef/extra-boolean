@@ -2,7 +2,7 @@
 
 ▌
 📦 [JSR](https://jsr.io/@nodef/extra-boolean),
-📦 [NPM](https://www.npmjs.com/package/extra-boolean),
+📦 [NPM](https://www.npmjs.com/package/@nodef/extra-boolean),
 📰 [Docs](https://jsr.io/@nodef/extra-boolean/doc).
 
 A **boolean** data type has two possible truth values, usually represented as
